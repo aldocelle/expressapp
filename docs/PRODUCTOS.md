@@ -38,6 +38,7 @@ Problema: cuentas por cobrar y abonos desordenados.
 - Aging de saldos; exportación para contabilidad; separación entre facturación y cobros.
 - Futuros: enlaces de pago y conciliación con proveedor autorizado.
 - MVP: registro, abonos, avisos por correo, reportes y exportación. No sustituye el SII ni contabilidad.
+- **Implementado en demo local (octubre 2026):** clientes (alta/edición y eliminación sin cuentas vinculadas), cuentas por cobrar (alta/edición), referencias, vencimientos, abonos manuales con validación para evitar sobrepago, eliminación confirmada de abonos, disputas, anulación sin pagos, filtros, estados, antigüedad de saldos, cartera pendiente/vencida, CSV de cuentas y pagos. Almacenamiento únicamente en localStorage del navegador; sin cuentas, respaldo, pagos verificados, correos ni conexión al SII.
 
 ## 04 DocExtract
 
