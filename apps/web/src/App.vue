@@ -6,6 +6,7 @@ import {
 } from 'lucide-vue-next'
 import { apps } from './data/catalog'
 import VenceYa from './components/VenceYa.vue'
+import CobroListo from './components/CobroListo.vue'
 
 const current = ref('inicio')
 const mobileOpen = ref(false)
@@ -76,11 +77,11 @@ function navigate(target: string) {
           <div class="section-eyebrow">ESTADO DEL PROYECTO / 001</div>
           <div class="overview-grid">
             <div class="overview-number"><b>06</b><span>Microapps en el universo</span></div>
-            <div class="overview-number"><b>01</b><span>Módulo local funcional</span></div>
-            <div class="overview-number"><b>05</b><span>En planificación</span></div>
+            <div class="overview-number"><b>02</b><span>Módulos locales funcionales</span></div>
+            <div class="overview-number"><b>04</b><span>En planificación</span></div>
             <div class="overview-message">
               <ShieldCheck :size="20" />
-              <p>Etapa de desarrollo. Todavía no se pueden crear cuentas, recibir cobros ni enviar alertas. Los datos de VenceYa se guardan únicamente en este navegador.</p>
+              <p>Etapa de desarrollo. Todavía no se pueden crear cuentas, recibir cobros ni enviar alertas. Los datos de VenceYa y CobroListo se guardan únicamente en este navegador.</p>
             </div>
           </div>
         </section>
@@ -109,6 +110,11 @@ function navigate(target: string) {
       <div v-else-if="current === 'venceya'" class="content content-app">
         <button class="back-button" @click="navigate('inicio')"><ArrowLeft :size="16" /> Universo de aplicaciones</button>
         <VenceYa />
+      </div>
+
+      <div v-else-if="current === 'cobrolisto'" class="content content-app">
+        <button class="back-button" @click="navigate('inicio')"><ArrowLeft :size="16" /> Universo de aplicaciones</button>
+        <CobroListo />
       </div>
 
       <div v-else-if="selected" class="content content-detail">
