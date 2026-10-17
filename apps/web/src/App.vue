@@ -83,7 +83,7 @@ function navigate(target: string) {
             <div class="overview-number"><b>02</b><span>En planificación</span></div>
             <div class="overview-message">
               <ShieldCheck :size="20" />
-              <p>Etapa de desarrollo. Todavía no se pueden crear cuentas, recibir cobros ni enviar alertas. Los datos de las cuatro microapps locales se guardan únicamente en este navegador.</p>
+              <p>Entorno de desarrollo. Todavía no existen cuentas de usuario, cobros en línea ni alertas reales. Las cuatro microapps guardan registros únicamente en este navegador.</p>
             </div>
           </div>
         </section>
