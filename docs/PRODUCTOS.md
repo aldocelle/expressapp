@@ -65,6 +65,16 @@ Problema: perder renovaciones de contratos comerciales y mantenimiento.
 - Futuros: reajuste, aprobación de propuesta, integración con CobroListo.
 - MVP: contratos, ciclos, estados, avisos y panel.
 
+### Estado de RenuevaPro en el navegador
+
+- **Implementado en demo local (17-10-2026):** clientes como texto, servicios recurrentes, importes CLP por período, periodicidad, proyección MRR, fechas con anclaje fin de mes, confirmación manual de renovación e historial, pausa/cancelación, búsquedas, filtros y CSV.
+- **No disponible todavía:** correos automáticos, suscripciones cobradas, API, base de datos, acceso multiempresa y respaldo remoto.
+
+### Estado de DocExtract en el navegador
+
+- **Implementado en demo local (17-10-2026):** carga de PDF/JPG/PNG con límite de 10 MB; extracción local de texto de PDF seleccionable en hasta 30 páginas; reglas orientativas sobre campos; vista previa del archivo durante sesión; ingreso manual para escaneos e imágenes; validación de RUT, fecha y coherencia básica de totales; revisión humana, exportación CSV/JSON.
+- **No disponible todavía:** OCR de imágenes, tratamiento automático de PDF escaneado, IA especializada, conexión SII, verificación tributaria, servidor o archivos originales persistidos. Solo campos y un extracto de texto se guardan en localStorage; no utilizar datos privados reales en esta versión.
+
 ## 06 CertiQR
 
 Problema: generación manual y verificación difícil de certificados.
