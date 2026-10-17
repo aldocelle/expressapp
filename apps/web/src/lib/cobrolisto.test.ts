@@ -89,7 +89,7 @@ describe('CobroListo · protección de registros', () => {
     const l = ledger([record({ reference: '=SHELL()', concept: 'Servicio "extra"', payments: [payment(50_000)] })])
     expect(receivablesCsv(l, reference)).toContain("'=SHELL()")
     expect(receivablesCsv(l, reference)).toContain('""extra""')
-    expect(paymentsCsv(l)).toContain('50.000').toBe(false) // CSV almacena CLP enteros sin formato
+    expect(paymentsCsv(l)).not.toContain('50.000') // CSV almacena CLP enteros sin formato
     expect(paymentsCsv(l)).toContain('50000')
   })
 })
