@@ -6,14 +6,14 @@
 - [x] Fichas de alcance de cada producto.
 - [x] VenceYa MVP local: crear, editar, eliminar, filtrar y exportar registros.
 - [x] Pruebas unitarias de estados y CSV incorporadas al código.
-- [ ] Verificar build, typecheck y ejecución de pruebas en CI.
+- [x] Build, typecheck y pruebas unitarias verificados por Frontend CI el 17-10-2026.
 
 ## CobroListo · prototipo local de gestión
 - [x] Gestión local de clientes, cuentas y abonos.
 - [x] Saldos CLP enteros, estados y antigüedad de cartera.
 - [x] Filtros, historial, disputas y anulación controlada.
 - [x] Exportación CSV de cuentas y abonos.
-- [x] Pruebas unitarias incorporadas (pendiente verificar ejecución en CI).
+- [x] Pruebas unitarias incorporadas y verificadas en Frontend CI.
 - [ ] API y persistencia real, respaldo, autorización multiempresa.
 - [ ] Comprobantes de pago, conciliación y recordatorios por correo.
 - [ ] Auditoría, reversos trazables, emisión tributaria externa cuando corresponda.
