@@ -35,6 +35,14 @@ Comandos: npm run dev, npm run test, npm run typecheck y npm run build.
 
 No carga archivos; únicamente registra metadatos. No envía correos. No hay cuentas ni multiempresa. Los registros pueden perderse si se borran los datos del navegador.
 
+## Diseño y trabajo con IA en VS Code
+
+- [Guía de diseño y experiencia](docs/GUIA_DISENO.md): paleta, tipografías, componentes, responsive y criterios para cada microapp.
+- [Instrucciones para asistentes de código](AGENTS.md): flujo de trabajo y reglas de implementación.
+- [Instrucciones para GitHub Copilot](.github/copilot-instructions.md): aplicación de las guías desde VS Code.
+
+**Desarrollo de nuevas apps:** trabajar en la rama `develop/microapps`. Mantener `main` como rama estable.
+
 ## Documentación
 
 - docs/PRODUCTOS.md: alcance funcional de las seis microapps.
