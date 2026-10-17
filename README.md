@@ -2,7 +2,7 @@
 
 Universo de **seis microapps SaaS** para empresas chilenas, con una marca y una arquitectura compartidas.
 
-**Estado actual:** base web ejecutable + catálogo de las seis aplicaciones + primer módulo funcional de **VenceYa en modo local de desarrollo**. Las otras cinco aplicaciones están especificadas, pero todavía no implementadas. No hay autenticación, cobros, backend, envío real de alertas ni almacenamiento de documentos: no se debe comercializar ni usar con datos confidenciales en este estado.
+**Estado actual:** base web Vue + catálogo de seis aplicaciones + **dos módulos locales de desarrollo: VenceYa y CobroListo**. Las cuatro restantes están especificadas, todavía no implementadas. No hay autenticación, cobros en línea, backend, envío real de alertas ni almacenamiento de documentos: no comercializar ni usar con datos confidenciales en este estado.
 
 ## Aplicaciones
 
@@ -10,7 +10,7 @@ Universo de **seis microapps SaaS** para empresas chilenas, con una marca y una 
 |---|---|---|
 | VenceYa | Vencimientos de documentos y obligaciones | MVP local inicial |
 | CotizaFollow | Seguimiento de cotizaciones | Especificada |
-| CobroListo | Cuentas por cobrar | Especificada |
+| CobroListo | Cuentas por cobrar | MVP local inicial |
 | DocExtract | Extracción de datos de documentos | Especificada |
 | RenuevaPro | Renovación de servicios recurrentes | Especificada |
 | CertiQR | Emisión y verificación de certificados | Especificada |
@@ -25,6 +25,14 @@ Requiere Node.js 20.19+ o 22+ y npm.
 4. Abre la dirección que muestra Vite (habitualmente http://localhost:5173).
 
 Comandos: npm run dev, npm run test, npm run typecheck y npm run build.
+
+## Qué permite hacer CobroListo hoy
+
+- Registrar clientes, crear y editar cuentas por cobrar con montos CLP y fechas.
+- Registrar y corregir abonos manuales sin permitir sobrepagos.
+- Consultar saldos, estados y antigüedad de cuentas vencidas.
+- Filtrar por cliente/estado y exportar CSV de cuentas y abonos.
+- Los datos permanecen **solo en localStorage**. Sin pasarela bancaria, verificación de transferencias, avisos reales, cuentas ni respaldo remoto.
 
 ## Qué permite hacer VenceYa hoy
 
