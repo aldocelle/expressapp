@@ -36,17 +36,17 @@ export const apps: AppItem[] = [
   },
   {
     slug: 'docextract', name: 'DocExtract', initials: 'DE', category: 'Documentos',
-    eyebrow: 'De archivo a dato útil', color: '#D5E8FD', availability: 'planned',
+    eyebrow: 'De archivo a dato útil', color: '#D5E8FD', availability: 'local',
     description: 'Extrae datos de PDF e imágenes con revisión humana antes de exportar.',
     target: 'Administración, contadores y equipos de compras.',
-    features: ['PDF e imágenes', 'OCR cuando haga falta', 'Corrección de campos', 'Exportación estructurada']
+    features: ['Texto PDF seleccionable', 'Ingreso manual desde imágenes', 'Validación humana de campos', 'Exportación CSV y JSON']
   },
   {
     slug: 'renuevapro', name: 'RenuevaPro', initials: 'RP', category: 'Operaciones',
-    eyebrow: 'Cuida tus ingresos recurrentes', color: '#E6E1FE', availability: 'planned',
+    eyebrow: 'Cuida tus ingresos recurrentes', color: '#E6E1FE', availability: 'local',
     description: 'Gestiona contratos de servicios y renovaciones sin perder oportunidades.',
     target: 'Mantención, soporte, consultoras y prestadores B2B.',
-    features: ['Ciclos de renovación', 'Contratos activos', 'Avisos configurables', 'MRR estimado']
+    features: ['Ciclos de renovación', 'Contratos activos y pausados', 'Historial de renovaciones', 'MRR contractual estimado']
   },
   {
     slug: 'certiqr', name: 'CertiQR', initials: 'CQ', category: 'Certificación',
