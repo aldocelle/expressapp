@@ -1,0 +1,13 @@
+{
+  "name": "expressapps",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": ["apps/web"],
+  "scripts": {
+    "dev": "npm run dev -w @expressapps/web",
+    "build": "npm run build -w @expressapps/web",
+    "typecheck": "npm run typecheck -w @expressapps/web",
+    "test": "npm run test -w @expressapps/web"
+  },
+  "engines": {"node": ">=20.19.0"}
+}
