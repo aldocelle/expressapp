@@ -29,10 +29,10 @@ export const apps: AppItem[] = [
   },
   {
     slug: 'cobrolisto', name: 'CobroListo', initials: 'CL', category: 'Finanzas',
-    eyebrow: 'Cobra sin perseguir', color: '#FFE2C6', availability: 'planned',
+    eyebrow: 'Cobra sin perseguir', color: '#FFE2C6', availability: 'local',
     description: 'Controla cuentas por cobrar, pagos parciales y saldos pendientes.',
     target: 'Profesionales y pequeñas empresas con ventas a crédito.',
-    features: ['Cuentas y saldos', 'Registro de abonos', 'Recordatorios respetuosos', 'Antigüedad de deuda']
+    features: ['Cuentas y saldos', 'Registro manual de abonos', 'Historial y estados de deuda', 'Antigüedad de saldos']
   },
   {
     slug: 'docextract', name: 'DocExtract', initials: 'DE', category: 'Documentos',
