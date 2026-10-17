@@ -8,6 +8,16 @@
 - [x] Pruebas unitarias de estados y CSV incorporadas al código.
 - [ ] Verificar build, typecheck y ejecución de pruebas en CI.
 
+## CobroListo · prototipo local de gestión
+- [x] Gestión local de clientes, cuentas y abonos.
+- [x] Saldos CLP enteros, estados y antigüedad de cartera.
+- [x] Filtros, historial, disputas y anulación controlada.
+- [x] Exportación CSV de cuentas y abonos.
+- [x] Pruebas unitarias incorporadas (pendiente verificar ejecución en CI).
+- [ ] API y persistencia real, respaldo, autorización multiempresa.
+- [ ] Comprobantes de pago, conciliación y recordatorios por correo.
+- [ ] Auditoría, reversos trazables, emisión tributaria externa cuando corresponda.
+
 ## Fase 1 · Identidad y multiempresa
 - [ ] API Node TypeScript.
 - [ ] MySQL/MariaDB y migraciones versionadas.
