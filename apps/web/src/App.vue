@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import {
-  ArrowLeft, ArrowRight, ArrowUpRight, Blocks3, Check, ChevronRight,
+  ArrowLeft, ArrowRight, ArrowUpRight, Blocks, Check, ChevronRight,
   LayoutGrid, Menu, ShieldCheck, Sparkles
 } from 'lucide-vue-next'
 import { apps } from './data/catalog'
 import VenceYa from './components/VenceYa.vue'
+import CobroListo from './components/CobroListo.vue'
+import RenuevaPro from './components/RenuevaPro.vue'
+import DocExtract from './components/DocExtract.vue'
 
 const current = ref('inicio')
 const mobileOpen = ref(false)
@@ -22,7 +25,7 @@ function navigate(target: string) {
   <div class="shell">
     <aside class="sidebar" :class="{ 'sidebar-open': mobileOpen }">
       <button class="brand" @click="navigate('inicio')">
-        <span class="brand-mark"><Blocks3 :size="21" :stroke-width="2.35" /></span>
+        <span class="brand-mark"><Blocks :size="21" :stroke-width="2.35" /></span>
         <span class="brand-word">express<span>apps</span><small>by ExpressWebsite</small></span>
       </button>
 
@@ -67,7 +70,7 @@ function navigate(target: string) {
           <div class="hero-art" aria-hidden="true">
             <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
             <span class="orb orb-one">VY</span><span class="orb orb-two">CF</span><span class="orb orb-three">CL</span>
-            <div class="hero-art-center"><Blocks3 :size="48" :stroke-width="1.35" /></div>
+            <div class="hero-art-center"><Blocks :size="48" :stroke-width="1.35" /></div>
             <div class="art-label">UN PRODUCTO.<br />MIL POSIBILIDADES.</div>
           </div>
         </div>
@@ -76,11 +79,11 @@ function navigate(target: string) {
           <div class="section-eyebrow">ESTADO DEL PROYECTO / 001</div>
           <div class="overview-grid">
             <div class="overview-number"><b>06</b><span>Microapps en el universo</span></div>
-            <div class="overview-number"><b>01</b><span>Módulo local funcional</span></div>
-            <div class="overview-number"><b>05</b><span>En planificación</span></div>
+            <div class="overview-number"><b>04</b><span>Módulos locales funcionales</span></div>
+            <div class="overview-number"><b>02</b><span>En planificación</span></div>
             <div class="overview-message">
               <ShieldCheck :size="20" />
-              <p>Etapa de desarrollo. Todavía no se pueden crear cuentas, recibir cobros ni enviar alertas. Los datos de VenceYa se guardan únicamente en este navegador.</p>
+              <p>Entorno de desarrollo. Todavía no existen cuentas de usuario, cobros en línea ni alertas reales. Las cuatro microapps guardan registros únicamente en este navegador.</p>
             </div>
           </div>
         </section>
@@ -109,6 +112,21 @@ function navigate(target: string) {
       <div v-else-if="current === 'venceya'" class="content content-app">
         <button class="back-button" @click="navigate('inicio')"><ArrowLeft :size="16" /> Universo de aplicaciones</button>
         <VenceYa />
+      </div>
+
+      <div v-else-if="current === 'cobrolisto'" class="content content-app">
+        <button class="back-button" @click="navigate('inicio')"><ArrowLeft :size="16" /> Universo de aplicaciones</button>
+        <CobroListo />
+      </div>
+
+      <div v-else-if="current === 'renuevapro'" class="content content-app">
+        <button class="back-button" @click="navigate('inicio')"><ArrowLeft :size="16" /> Universo de aplicaciones</button>
+        <RenuevaPro />
+      </div>
+
+      <div v-else-if="current === 'docextract'" class="content content-app">
+        <button class="back-button" @click="navigate('inicio')"><ArrowLeft :size="16" /> Universo de aplicaciones</button>
+        <DocExtract />
       </div>
 
       <div v-else-if="selected" class="content content-detail">

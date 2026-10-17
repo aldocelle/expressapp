@@ -6,7 +6,32 @@
 - [x] Fichas de alcance de cada producto.
 - [x] VenceYa MVP local: crear, editar, eliminar, filtrar y exportar registros.
 - [x] Pruebas unitarias de estados y CSV incorporadas al código.
-- [ ] Verificar build, typecheck y ejecución de pruebas en CI.
+- [x] Build, typecheck y pruebas unitarias verificados por Frontend CI el 17-10-2026.
+
+## CobroListo · prototipo local de gestión
+- [x] Gestión local de clientes, cuentas y abonos.
+- [x] Saldos CLP enteros, estados y antigüedad de cartera.
+- [x] Filtros, historial, disputas y anulación controlada.
+- [x] Exportación CSV de cuentas y abonos.
+- [x] Pruebas unitarias incorporadas y verificadas en Frontend CI.
+- [ ] API y persistencia real, respaldo, autorización multiempresa.
+- [ ] Comprobantes de pago, conciliación y recordatorios por correo.
+- [ ] Auditoría, reversos trazables, emisión tributaria externa cuando corresponda.
+
+## RenuevaPro · MVP local
+- [x] Registro y edición de servicios con mensualidad, trimestre, semestre o anualidad.
+- [x] Próxima fecha, estados, pausa/cancelación/reactivación, historial de renovaciones confirmadas.
+- [x] Manejo de fin de mes y equivalente MRR contractual estimado.
+- [x] Búsqueda, filtros y CSV.
+- [ ] Recordatorios reales, backend, usuarios, pagos y auditoría multiempresa.
+
+## DocExtract · MVP local
+- [x] Lectura local de PDF con texto seleccionable mediante PDF.js.
+- [x] Soporte de imágenes y PDF escaneado mediante corrección manual (sin OCR).
+- [x] Extracción heurística de folio, fechas, RUT y montos cuando estén presentes.
+- [x] Revisión humana, validación de RUT y consistencia de montos.
+- [x] Exportación CSV/JSON; originales sin persistir.
+- [ ] OCR real para imágenes, almacenamiento privado, backend y procesos asíncronos.
 
 ## Fase 1 · Identidad y multiempresa
 - [ ] API Node TypeScript.

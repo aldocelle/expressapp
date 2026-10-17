@@ -2,7 +2,7 @@
 
 Universo de **seis microapps SaaS** para empresas chilenas, con una marca y una arquitectura compartidas.
 
-**Estado actual:** base web ejecutable + catálogo de las seis aplicaciones + primer módulo funcional de **VenceYa en modo local de desarrollo**. Las otras cinco aplicaciones están especificadas, pero todavía no implementadas. No hay autenticación, cobros, backend, envío real de alertas ni almacenamiento de documentos: no se debe comercializar ni usar con datos confidenciales en este estado.
+**Estado actual:** base web Vue + catálogo de seis aplicaciones + **cuatro módulos locales de desarrollo: VenceYa, CobroListo, RenuevaPro y DocExtract**. Las dos restantes están especificadas, todavía no implementadas. No hay autenticación, cobros en línea, backend, envío real de alertas ni almacenamiento de documentos: no comercializar ni usar con datos confidenciales en este estado.
 
 ## Aplicaciones
 
@@ -10,9 +10,9 @@ Universo de **seis microapps SaaS** para empresas chilenas, con una marca y una 
 |---|---|---|
 | VenceYa | Vencimientos de documentos y obligaciones | MVP local inicial |
 | CotizaFollow | Seguimiento de cotizaciones | Especificada |
-| CobroListo | Cuentas por cobrar | Especificada |
-| DocExtract | Extracción de datos de documentos | Especificada |
-| RenuevaPro | Renovación de servicios recurrentes | Especificada |
+| CobroListo | Cuentas por cobrar | MVP local inicial |
+| DocExtract | Extracción de datos de documentos | MVP local inicial |
+| RenuevaPro | Renovación de servicios recurrentes | MVP local inicial |
 | CertiQR | Emisión y verificación de certificados | Especificada |
 
 ## Arranque
@@ -26,6 +26,20 @@ Requiere Node.js 20.19+ o 22+ y npm.
 
 Comandos: npm run dev, npm run test, npm run typecheck y npm run build.
 
+## Qué permite hacer CobroListo hoy
+
+- Registrar clientes, crear y editar cuentas por cobrar con montos CLP y fechas.
+- Registrar y corregir abonos manuales sin permitir sobrepagos.
+- Consultar saldos, estados y antigüedad de cuentas vencidas.
+- Filtrar por cliente/estado y exportar CSV de cuentas y abonos.
+- Los datos permanecen **solo en localStorage**. Sin pasarela bancaria, verificación de transferencias, avisos reales, cuentas ni respaldo remoto.
+
+## RenuevaPro y DocExtract en modo local
+
+**RenuevaPro:** contratos de servicios, valor CLP por período, ciclos mensual/trimestral/semestral/anual, próximas fechas, historial de renovaciones manuales, proyección MRR contractual, filtros y CSV. No envía recordatorios ni realiza cobros.
+
+**DocExtract:** archivos PDF con texto seleccionable (hasta 30 páginas y 10 MB) extraídos localmente con PDF.js; imágenes y escaneos requieren ingresar campos manualmente. Permite revisar fechas, RUT, folio y montos; exportar CSV y JSON. Los originales no se guardan: únicamente los campos y un fragmento de texto se almacenan localmente. No hay OCR real ni integración SII.
+
 ## Qué permite hacer VenceYa hoy
 
 - Crear, editar, buscar, filtrar y eliminar registros de vencimiento.
@@ -34,6 +48,14 @@ Comandos: npm run dev, npm run test, npm run typecheck y npm run build.
 - Guardar registros **solo en localStorage del navegador**.
 
 No carga archivos; únicamente registra metadatos. No envía correos. No hay cuentas ni multiempresa. Los registros pueden perderse si se borran los datos del navegador.
+
+## Diseño y trabajo con IA en VS Code
+
+- [Guía de diseño y experiencia](docs/GUIA_DISENO.md): paleta, tipografías, componentes, responsive y criterios para cada microapp.
+- [Instrucciones para asistentes de código](AGENTS.md): flujo de trabajo y reglas de implementación.
+- [Instrucciones para GitHub Copilot](.github/copilot-instructions.md): aplicación de las guías desde VS Code.
+
+**Desarrollo de nuevas apps:** trabajar en la rama `develop/microapps`. Mantener `main` como rama estable.
 
 ## Documentación
 
