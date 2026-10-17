@@ -18,6 +18,21 @@
 - [ ] Comprobantes de pago, conciliación y recordatorios por correo.
 - [ ] Auditoría, reversos trazables, emisión tributaria externa cuando corresponda.
 
+## RenuevaPro · MVP local
+- [x] Registro y edición de servicios con mensualidad, trimestre, semestre o anualidad.
+- [x] Próxima fecha, estados, pausa/cancelación/reactivación, historial de renovaciones confirmadas.
+- [x] Manejo de fin de mes y equivalente MRR contractual estimado.
+- [x] Búsqueda, filtros y CSV.
+- [ ] Recordatorios reales, backend, usuarios, pagos y auditoría multiempresa.
+
+## DocExtract · MVP local
+- [x] Lectura local de PDF con texto seleccionable mediante PDF.js.
+- [x] Soporte de imágenes y PDF escaneado mediante corrección manual (sin OCR).
+- [x] Extracción heurística de folio, fechas, RUT y montos cuando estén presentes.
+- [x] Revisión humana, validación de RUT y consistencia de montos.
+- [x] Exportación CSV/JSON; originales sin persistir.
+- [ ] OCR real para imágenes, almacenamiento privado, backend y procesos asíncronos.
+
 ## Fase 1 · Identidad y multiempresa
 - [ ] API Node TypeScript.
 - [ ] MySQL/MariaDB y migraciones versionadas.
