@@ -2,12 +2,27 @@
   "name": "expressapps",
   "version": "0.1.0",
   "private": true,
-  "workspaces": ["apps/web"],
+  "workspaces": [
+    "apps/web",
+    "apps/api"
+  ],
   "scripts": {
     "dev": "npm run dev -w @expressapps/web",
     "build": "npm run build -w @expressapps/web",
     "typecheck": "npm run typecheck -w @expressapps/web",
-    "test": "npm run test -w @expressapps/web"
+    "test": "npm run test -w @expressapps/web && npm run test -w @expressapps/api",
+    "dev:api": "npm run dev -w @expressapps/api",
+    "start": "npm run start -w @expressapps/api",
+    "radar:user": "npm run user -w @expressapps/api",
+    "radar:sync": "npm run sync -w @expressapps/api",
+    "radar:backup": "npm run backup -w @expressapps/api",
+    "test:e2e": "playwright test"
   },
-  "engines": {"node": ">=20.19.0"}
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "supertest": "^7.3.1"
+  }
 }

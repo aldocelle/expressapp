@@ -1,0 +1,21 @@
+{
+  "name": "@expressapps/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file-if-exists=../../.env --watch src/server.mjs",
+    "start": "node --env-file-if-exists=../../.env src/server.mjs",
+    "user": "node --env-file-if-exists=../../.env src/cli.mjs user",
+    "sync": "node --env-file-if-exists=../../.env src/cli.mjs sync",
+    "backup": "node --env-file-if-exists=../../.env src/cli.mjs backup",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "luxon": "^3.7.2",
+    "zod": "^4.1.0"
+  }
+}

@@ -1,4 +1,4 @@
-export type AppSlug = 'venceya' | 'cotizafollow' | 'cobrolisto' | 'docextract' | 'renuevapro' | 'certiqr'
+export type AppSlug = 'venceya' | 'cotizafollow' | 'cobrolisto' | 'docextract' | 'renuevapro' | 'certiqr' | 'radar-de-pegas'
 export type AppItem = {
   slug: AppSlug
   name: string
@@ -7,12 +7,19 @@ export type AppItem = {
   eyebrow: string
   description: string
   color: string
-  availability: 'local' | 'planned'
+  availability: 'local' | 'planned' | 'server'
   features: string[]
   target: string
 }
 
 export const apps: AppItem[] = [
+  {
+    slug: 'radar-de-pegas', name: 'Radar de Pegas', initials: 'RP', category: 'Oportunidades',
+    eyebrow: 'Tu próxima oportunidad, con dirección', color: '#D9EADC', availability: 'server',
+    description: 'Encuentra licitaciones, prepara propuestas y organiza el seguimiento de tu equipo.',
+    target: 'Pymes, consultoras, agencias y proveedores del Estado.',
+    features: ['Mercado Público desde servidor', 'Sesiones por organización', 'Búsquedas y alertas internas', 'Seguimiento con notas y tareas']
+  },
   {
     slug: 'venceya', name: 'VenceYa', initials: 'VY', category: 'Administración',
     eyebrow: 'Nunca se te pasa una fecha', color: '#DDF5C5', availability: 'local',
