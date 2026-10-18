@@ -1,3 +1,5 @@
+> Actualización: Radar de Pegas ya tiene controles de servidor descritos en [RADAR_DE_PEGAS.md](RADAR_DE_PEGAS.md). Las limitaciones del frontend local que siguen aplican a VenceYa y al estado original del resto de módulos. La lista siguiente sigue siendo una referencia para la plataforma completa.
+
 # Seguridad y privacidad · Lista de control
 
 **Estado:** documentación para implementación. El frontend actual funciona solo como demo local. No subir documentos sensibles ni información personal real.

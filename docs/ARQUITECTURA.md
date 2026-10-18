@@ -33,3 +33,7 @@ Entidades propias:
 ## Próximo entregable técnico
 
 Reemplazar almacenamiento local de VenceYa por API autenticada y DB, con CRUD por organización, pruebas cross-tenant, jobs de alertas por correo y auditoría básica. Después añadir pagos recurrentes. No procesar datos de clientes reales antes.
+
+## Radar de Pegas (implementación actual)
+
+El dominio Radar incorpora API Express + SQLite local con WAL, sesiones y aislamiento por organización. Es una decisión para una instancia permanente con volumen privado persistente; el diseño MySQL/MariaDB anterior continúa como evolución para otros dominios o mayor escala. La guía específica y sus limitaciones están en RADAR_DE_PEGAS.md. VenceYa conserva su implementación local.

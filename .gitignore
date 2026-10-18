@@ -9,3 +9,7 @@ coverage/
 .vscode/
 .idea/
 *.log
+/data/
+*.sqlite*
+test-results/
+playwright-report/
